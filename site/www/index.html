@@ -35,6 +35,56 @@ button, a {
     background: none;
     color: var(--fg);
 }
+
+.home-bottom {
+    grid-auto-flow: row;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+@media only screen and (min-width: 1124px) {
+    .home-bottom {
+        grid-auto-flow: column;
+        grid-template-columns: max-content 1fr max-content;
+        gap: 1rem;
+    }
+
+    nav {
+        margin-top: 0;
+    }
+}
+
+.fadein {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    background: black;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    gap: 1rem;
+    grid-auto-flow: column;
+    animation: fade 3s;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
         </style>
     </head>
     <body>
