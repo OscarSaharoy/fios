@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="6.0816632"
-     inkscape:cx="60.756406"
-     inkscape:cy="25.32202"
+     inkscape:zoom="1.7916731"
+     inkscape:cx="1.9534814"
+     inkscape:cy="-55.813753"
      inkscape:window-width="1728"
      inkscape:window-height="1051"
      inkscape:window-x="0"
@@ -40,10 +40,9 @@
      id="layer1"
      transform="translate(-64.966577,-87.006576)">
     <path
-       style="fill:#ffdd99;fill-opacity:1;stroke-width:1.226;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1000;stroke-dashoffset:152.492;paint-order:fill markers stroke"
-       d="M 64.966577,88.307271 V 107.76448 H 98.553674 V 88.308305 l -16.79329,16.792765 z"
        id="path2"
-       sodipodi:nodetypes="cccccc" />
+       style="fill:#ffdd99;fill-opacity:1;stroke-width:1.226;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1000;stroke-dashoffset:152.492;paint-order:fill markers stroke"
+       d="M 64.966577 88.307272 L 64.966577 107.76448 L 67.039835 107.76448 L 75.731811 99.072506 L 64.966577 88.307272 z M 98.553674 88.308305 L 87.789473 99.072506 L 96.480932 107.76448 L 98.553674 107.76448 L 98.553674 88.308305 z M 77.165316 100.50653 L 69.907361 107.76448 L 93.61134 107.76448 L 86.354419 100.50756 L 81.760384 105.10108 L 77.165316 100.50653 z " />
     <path
        style="stroke-width:1.226;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1000;stroke-dashoffset:152.492;paint-order:fill markers stroke;fill:#ffdd99;fill-opacity:1"
        d="M 66.734945,87.006576 81.759351,102.03046 96.78324,87.006576 Z"

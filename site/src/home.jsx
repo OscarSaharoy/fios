@@ -51,7 +51,7 @@ export function Home() {
 export function Contact() {
     return <Page>
         <div style={{ display: "grid", justifyContent: "center", alignContent: "center", alignItems: "center", gap: "0.6rem", gridAutoFlow: "column" }}>
-            <img src="/assets/envelope.svg" style={{ width: "2rem" }}/>
+            <img src="/assets/envelope.svg" style={{ width: "1.7rem" }}/>
             <p style={{ fontSize: "1.5rem" }}><a href="mailto:oscar@boikot.xyz"> oscar@boikot.xyz </a></p>
         </div>
     </Page>;
