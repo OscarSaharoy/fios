@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 function Fadein() {
     return <div class="fadein">
         <img src="/assets/leaf2.svg" style={{ width: "1rem", marginLeft: "1rem" }} />
-        <p style={{ fontSize: "1.5rem" }}><em> How will we do research in the future? </em></p>
+        <p style={{ fontSize: "1.5rem" }}><em> How will we research in the future? </em></p>
     </div>;
 }
 
