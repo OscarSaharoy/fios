@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="/assets/favicon.svg">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title> fios </title>
+
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", serif;
+}
+
+:root {
+    --bg: #050601;
+    --fg: #fd9;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--fg);
+}
+
+button, a {
+    appearance: none;
+    border: none;
+    background: none;
+    color: var(--fg);
+}
+        </style>
+    </head>
+    <body>
+        <div id="react-entrypoint"></div>
+
+        <div id="modal-portal"></div>
+
+        <script src="/build/app.js"></script>
+    </body>
+</html>
