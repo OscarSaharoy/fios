@@ -10,6 +10,14 @@ function Fadein() {
 }
 
 function NavBar() {
+    
+    const links = [
+        ["/", "home"],
+        ["/product", "product"],
+        ["/about", "about"],
+        ["/contact", "contact"],
+    ];
+
     return <section class="home-bottom" style={{ display: "grid", alignItems: "center", paddingBottom: "1rem", borderBottom: "2px solid var(--fg)" }}>
         <a href="/" style={{ textDecoration: "none", justifySelf: "start" }}>
             <div style={{ display: "grid", gridAutoFlow: "column", gap: "1rem", alignItems: "center" }}>
@@ -21,10 +29,11 @@ function NavBar() {
             /fʲɨsˠ/ <span style={{ fontSize: "0.7rem", fontWeight: 600 }}>IRISH</span> • <strong>m</strong> <em>(genitive singular feasa)</em> • knowledge, information
         </p>
         <nav style={{ display: "flex", gap: "0.6rem 2.4rem", justifySelf: "end", flexWrap: "wrap", justifyContent: "end" }}>
-            <p><a href="/"> home </a></p>
-            <p><a href="/product"> product </a></p>
-            <p><a href="/about"> about </a></p>
-            <p><a href="/contact"> contact </a></p>
+            { links.map( ([path, label]) =>
+                window.location.pathname === path
+                    ? <p style={{ color: "white" }}> { label } </p>
+                    : <p><a href={ path }> { label } </a></p>
+            ) }
         </nav>
     </section>
 }
