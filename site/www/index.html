@@ -5,7 +5,7 @@
         <link rel="icon" href="/assets/favicon.svg">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title> fios </title>
+        <title> fios | Research Intelligently </title>
 
         <style>
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
@@ -34,6 +34,11 @@ button, a {
     border: none;
     background: none;
     color: var(--fg);
+    cursor: pointer;
+    transition: transform 0.22s;
+}
+button:hover {
+    transform: translateX(0.2rem);
 }
 
 .home-bottom {
@@ -95,6 +100,26 @@ main {
         opacity: 0;
     }
 }
+
+input {
+    appearance: none;
+    background: transparent;
+    border: none;
+    color: var(--fg);
+}
+input:focus {
+    border: none;
+    outline: none;
+}
+
+.glow {
+    transition: box-shadow 0.22s;
+}
+.glow:focus-within {
+    box-shadow: 0 0 1rem 0.2rem #fd99;
+}
+
+
         </style>
     </head>
     <body>
