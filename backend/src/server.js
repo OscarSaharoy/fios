@@ -1,26 +1,29 @@
 import http from "http";
 
 
+async function getContent(req, res, parsedURL) {
+    
+}
+
+
 const server = http.createServer((req, res) => {
-    // This function is called once the headers have been received
-    res.setHeader("Content-Type", "application/json");
-    res.setHeader("Access-Control-Allow-Origin", "http://localhost:8015");
 
-    // This function is called as chunks of body are received
-    req.on("data", (data) => {
-        body += data;
-    });
+    const baseURL = 'http://' + req.headers.host + '/';
+    const parsedURL = new URL(req.url, baseURL);
+    const params = Object.fromEntries(parsedURL.searchParams);
 
-    // This function is called once the body has been fully received
-    req.on("end", () => {
-        try {
-            res.statusCode = 200;
-            res.end(`hi`);
-        } catch (e) {
-            res.statusCode = 400;
-            res.end(`error`);
-        }
-    });
+    const routes = {
+        "/get-content": getContent,
+    };
+
+    const callback = routes[parsedURL.pathname];
+
+    if( callback ) return callback( req, res, parsedURL );
+    else {
+        res.statusCode = 404;
+        res.writeHead(404, { 'Content-Type': "application/html" });
+        res.end("404 not found");
+    }
 });
 
 server.listen(8014, () => {

@@ -68,6 +68,7 @@ export function Contact() {
 export function Product() {
     return <Page>
         <div style={{ display: "grid", alignContent: "center", justifyContent: "stretch", justifySelf: "center", width: "100%", maxWidth: "40rem", textAlign: "center", gap: "2rem", paddingBottom: "5rem" }}>
+            {/*
             <h1 style={{ maxWidth: "30rem", justifySelf: "center" }}> Research faster, at larger scale, with greater accuracy. </h1>
             <div className="glow" style={{ border: "2px solid var(--fg)", padding: "1rem", display: "grid", gap: "1rem" }}>
                 <input placeholder="What would you like to make a research report about?" /> 
@@ -78,6 +79,9 @@ export function Product() {
                     </button>
                 </div>
             </div>
+            */}
+            <p> Summarise articles </p>
+            <textarea placeholder="Paste urls" style={{ border: "2px solid var(--fg)", padding: "1rem", resize: "vertical" }}></textarea>
         </div>
     </Page>;
 }
